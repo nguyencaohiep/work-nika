@@ -1,0 +1,30 @@
+## Server Configuration
+SERVER_NAME: "info_project_service"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "7012"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Router Configuration
+ROUTER_BASE_PATH: ""
+
+## Cryptography Configuration
+CRYPT_PRIVATE_KEY_FILE: "./config/keys/private.key"
+CRYPT_PUBLIC_KEY_FILE: "./config/keys/public.key"
+
+## Database Configuration
+
+DB_DRIVER: "postgres"
+DB_HOST: "127.0.0.1"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "password"
+DB_NAME: "crawl_service"
+
+## Block Number Configuration
+START_BLOCK_NUMBER: 15746041
+
+## Node Configuration
+NODE_WSS_URL: "wss://mainnet.infura.io/ws/v3/6101eef3ff4747d38644ae0e9f606316"

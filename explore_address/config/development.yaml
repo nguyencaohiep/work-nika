@@ -1,0 +1,24 @@
+## Server Configuration
+SERVER_NAME: "explore_address"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8000"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration -> Masterhost at first index
+DB_DRIVER: "postgres"
+DB_HOST: "127.0.0.1"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "password"
+DB_NAME: "explore_local"
+
+EVENT_NAME_TRANSFER: "Transfer"
+EVENT_SIGN_TRANSFER: "ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+CONTRACT_ABI: "[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount0In\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount1In\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount0Out\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount1Out\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"Swap\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"amount0\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"amount1\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint160\",\"name\":\"sqrtswappoolX96\",\"type\":\"uint160\"},{\"indexed\":false,\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"indexed\":false,\"internalType\":\"int24\",\"name\":\"tick\",\"type\":\"int24\"}],\"name\":\"SwapV3\",\"type\":\"event\"}]"
+
+MORALIS_KEY: "GKjP6s9bFxc7LfDmrRR2TH6vm6jr5gQCqoqY9A6c6GryHkXSELHK2DGx35SKrdYn"
+LIST_NODES_ETH: "wss://mainnet.infura.io/ws/v3/69b3ed1469974afa8d5d78cded1d3afe wss://mainnet.infura.io/ws/v3/918696015a7d4f4cac3baefcbf972468 wss://mainnet.infura.io/ws/v3/5d8d0edf27224dae9d214f2194bb0b25"
+LIST_NODES_BSC: "https://wild-hidden-sheet.bsc.discover.quiknode.pro/d993186a2be5b00bc3dc1b0b034e151db712efad/ https://intensive-palpable-liquid.bsc.discover.quiknode.pro/da37b06ae8e6cffa36e1c0d9f3bd4ca2c30801a5/"

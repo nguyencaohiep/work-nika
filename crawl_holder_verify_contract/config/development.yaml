@@ -1,0 +1,24 @@
+## Server Configuration
+SERVER_NAME: "holder_contract"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8003"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+
+MS_DRIVER: "redis"
+MS_HOST: "127.0.0.1"
+MS_PORT: "6379"
+MS_PASSWORD: ""
+MS_NAME: 0
+
+KEY_MS_ETH: "listen_transfersETH"
+KEY_MS_BSC: "listen_transfersBSC"
+
+
+DOMAIN_LOCAL: "https://test-admin2.gear5.guru/crawler"
+API_UPDATE_HOLDERS_CONTRACT: "/crypto/update-contract-holders"
+API_CHECK_CONTRACT_VERIFY: "/crypto/check-contract-verify?cryptoId=%v"
+

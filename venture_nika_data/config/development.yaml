@@ -1,0 +1,27 @@
+## Server Configuration
+SERVER_NAME: "venture-data-service"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8010"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+# LOG_OUTPUT: "/home/ubuntu/backend/crawl_fund_coincarp/log.log"
+
+# DB_DRIVER: "postgres"
+# DB_HOST: "127.0.0.1" # ip dev
+# DB_PORT: "5432"
+# DB_USER: "postgres"
+# DB_PASSWORD: "password"
+# DB_NAME: "venture_nika"
+
+DB_DRIVER: "postgres"
+DB_HOST: "45.119.215.68" # ip dev
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "!!nika-get-5-million-2023@@"
+DB_NAME: "venture_nika"
+
+API_STATISTICS_CATEGORY_MONTH : "https://sapi.coincarp.com/api/v1/market/investor/trendlist?investorcode=%v&lang=en-US&year=%v"
+API_STATISTICS_COUNTRY: "https://sapi.coincarp.com/api/v1/market/investor/statbycountry?investorcode=%v&lang=en-US"

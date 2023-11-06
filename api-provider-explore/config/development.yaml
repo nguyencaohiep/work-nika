@@ -1,0 +1,18 @@
+## Server Configuration
+SERVER_NAME: "explore_address"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8000"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration -> Masterhost at first index
+DB_DRIVER: "postgres"
+DB_HOST: "127.0.0.1"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "password"
+DB_NAME: "explore_local"
+
+LEGIT_IP_SERVER_CRAWLER: "127.0.0.1"

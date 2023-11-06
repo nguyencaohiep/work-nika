@@ -1,0 +1,35 @@
+# ## Server Configuration
+SERVER_NAME: "crawl_price_3rd"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8001"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+# ## Database Configuration
+# DB_DRIVER: "postgres"
+# DB_HOST: "52.192.15.63"
+# DB_PORT: "5432"
+# DB_USER: "postgres"
+# DB_PASSWORD: "!!nika-get-5-million-2023@@"
+# DB_NAME: "gear5"
+
+# DB_DRIVER: "postgres"
+# DB_HOST: "127.0.0.1"
+# DB_PORT: "5432"
+# DB_USER: "postgres"
+# DB_PASSWORD: "password"
+# DB_NAME: "gear5_local"
+
+# WETH_ADDRESS: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+# WBNB_ADDRESS: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+ 
+API_KEY_CMC: ["d96dab6d-e6f8-4481-bd95-f990c88366b1", "7a4f9fa2-035e-4f34-bb0d-e79528fcda8f", "f5b89053-9a55-4f96-99d5-ea7a6b2ef908","88130c4c-20e3-4305-8628-53c3dec365c8","122d60e9-e039-42b5-b148-035620f3ad5d","01bfed42-2741-4dfe-8f91-808faaafef5d", "2fa948d5-3efc-43a8-9ba2-823ad0cbca60", "04a9f80c-29a0-47bb-8cd8-fc6ff7899062"]
+API_CMC: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+API_SOL: "https://public-api.solscan.io/token/list?sortBy=market_cap&direction=desc&limit=50&offset=%v"
+
+
+DOMAIN_LOCAL: "https://api-admin.gear5.io/crawler"
+API_GET_INFO: "/crypto/get-info"
+API_UPDATE_PRICE: "/crypto/update-price"

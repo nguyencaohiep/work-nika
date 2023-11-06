@@ -1,0 +1,20 @@
+## Server Configuration
+SERVER_NAME: "admin_service"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8005"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration
+DB_DRIVER: "postgres"
+DB_HOST: "18.181.228.163"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "!!nika-get-5-million-2023@@"
+DB_NAME: "gear5"
+# LOG_OUTPUT: "/home/ubuntu/backend/backend-admin-gear5/be-log.log"
+JWT_EXPIRATION_TIME_HOURS: 168
+
+NUMBER_PER_PAGE: 50

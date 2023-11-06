@@ -1,0 +1,12 @@
+package constant
+
+import "time"
+
+const (
+	WAIT_DURATION_WHEN_RATE_LIMIT = 5 * time.Second
+	RESP_SUCCESS_STATUS_CODE      = 200
+	RESP_TOO_MANY_REQ_STATUS_CODE = 429
+	RESP_NOT_FOUND_STATUS_CODE    = 404
+
+	PAGE_LIMIT_DATA = 50
+)

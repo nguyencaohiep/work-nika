@@ -1,0 +1,20 @@
+## Server Configuration
+SERVER_NAME: "image_service"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8005"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration
+DB_DRIVER: "postgres"
+DB_HOST: "127.0.0.1"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "password"
+DB_NAME: "crawl_service"
+# LOG_OUTPUT: "/home/ubuntu/backend/backend-admin-gear5/be-log.log"
+JWT_EXPIRATION_TIME_HOURS: 24
+
+NUMBER_PER_PAGE: 50

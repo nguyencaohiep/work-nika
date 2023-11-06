@@ -1,0 +1,39 @@
+## Server Configuration
+SERVER_NAME: "price_service"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "7012"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration
+
+DB_DRIVER: "postgres"
+DB_HOST: "ec2-13-231-158-6.ap-northeast-1.compute.amazonaws.com"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "Nikae3b0c4422022@"
+DB_NAME: "nika_raw_data"
+
+LOG_FILE_PATH: "/home/ubuntu/backend/log_folder/current_price.log"
+
+## Node Configuration
+
+# Ethereum - Uniswap v2
+NODE_WSS_URL: "wss://mainnet.infura.io/ws/v3/faaf285d543d4068bc975e212a497409"
+
+CHAIN_ID: "1"
+
+ADD_WRAP_TOKEN: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+
+IDENTITY_NATIVE_COINGECKO: "Ethereum-eth"
+
+DEFI: "Uniswap v2"
+
+EVENT_NAME_SWAP: "SwapV2"
+
+EVENT_SIGN_SWAP: "d78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822"
+
+ABI_SWAP_POOL: "[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount0In\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount1In\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount0Out\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount1Out\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"SwapV2\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"amount0\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"int256\",\"name\":\"amount1\",\"type\":\"int256\"},{\"indexed\":false,\"internalType\":\"uint160\",\"name\":\"sqrtswappoolX96\",\"type\":\"uint160\"},{\"indexed\":false,\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"indexed\":false,\"internalType\":\"int24\",\"name\":\"tick\",\"type\":\"int24\"}],\"name\":\"SwapV3\",\"type\":\"event\"}]"
+

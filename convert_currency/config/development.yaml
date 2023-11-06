@@ -1,0 +1,28 @@
+## Server Configuration
+SERVER_NAME: "convert-service"
+SERVER_IP: "0.0.0.0"
+SERVER_PORT: "8006"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration -> Masterhost at first index
+# DB_DRIVER: "postgres"
+# DB_HOST: "127.0.0.1"
+# DB_PORT: "5432"
+# DB_USER: "postgres"
+# DB_PASSWORD: "password"
+# DB_NAME: "convert_currency"
+
+
+DB_DRIVER: "postgres"
+DB_HOST: "45.119.215.68" # ip dev
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "!!nika-get-5-million-2023@@"
+DB_NAME: "convert"
+
+API_CGC: "https://api.coingecko.com/api/v3/coins/%v"
+API_BINANCE: "https://api.binance.com/api/v3/ticker/price"
+API_CURRENCY_BINANCE: "https://www.binance.com/bapi/asset/v1/public/asset-service/product/currency"

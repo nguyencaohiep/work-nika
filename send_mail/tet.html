@@ -1,0 +1,40 @@
+<html>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+    * {
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1abc9c;
+    }
+
+    Button {
+      padding: 10px 20px;
+      background: #1abc9c;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <form class="validate">
+      <button>
+        Confirm
+      </button>
+    </form>
+  </body>
+  <script>
+    let confirmBtn = document.querySelector("form button")
+    confirmBtn.onclick = function() {
+      $.ajax({
+        type: 'GET',
+        url: "https://ed97-118-70-117-216.ap.ngrok.io/accounts/confirm-email/uuid=68077f550cb44cd590e2b85e565a2127",
+        headers: {
+            "Authorization": "Bearer " + "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoie1widXNlcklkXCI6MSxcImFjY291bnRJZFwiOjF9IiwiZXhwIjoxNjU4MzA5NTEyfQ.RGtSuHRoujJJjjBptJPNnRwpEzqFIxElg9m_PgCbhWDEmXtiC_9UAnQf8vodZomdQL9KxA5thJAKtGBmWSo1fHiuyBGBtUpMl6G05dzW9neeu3NbpwvkbwTkeZFpWS_Jm5pgn_BxPKLoShYWhkajFbPiAe840MnJVXE_Ko9ExLEdUv3dtc2QOBZnTeqaPBHA4peUDjT9LXeO8dMQGiyrvGwDX2mH1dbJxrJilwptZkARVMhsmg4ApyAenJyXjztMgt49Gaoxh-2F4xmBwObS3XvCiHDUuh8FYDM9lK9zJWFvTnAwN5GaFO6CGm17tquGlBPBXuu777E_Lm9RvBambCHLJuF0Ol_MPG5K39fr7AElVOitoi_Fngc6h60xsapa1kiw4cWZLZ64-Ku40kKyHvJ5LQObyHMikBDwjnltNe4Uxukx1c2XFctSlKkdfFPbaV13z5WYGfgzRrw7933Tt8PP_737JIELkaud3LD14XzV9gsCBYXeR5DLEVxcxeFmCaiTyuEjKYzl1OUjDaqtA8Zh-rMSt-JMv5eNaFwQGlpXJB-8Dxs6g5BmbT3qoNk4LnyHJT07MHy9gJcUKhBtMLmajv0pXI0fQsYcKRTvKXG-VKAaZ4qZoKtHfDzS15vvM219XLtoECzOuyngYSnHleBcw9ukHauBDm7uzPOYNmk"
+        }
+    }).done(function(data) { 
+        alert(data);
+    });
+    }
+  </script>
+</html>
